@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    body{
+     background-color: rgb(1, 1, 39);
+     overflow: hidden;
+     color: white;
+        /* font-family: "Chiller"; */
+    }
+    header {
+        display: flex;
+        gap: 20rem;
+    }
+    header img {
+        width: 100px;
+        padding: 20px ;
+        padding-left: 130px;
+    }
+    header .link {
+    margin-top: 25px;
+    }
+
+    header .link a{
+        padding: 20px 20px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+    }
+    section .container{
+        padding-top: 140px ;
+        font-size: 40px;
+        padding-left: 130px;
+        padding-bottom: 30px;
+       
+    }
+    section img {
+        width: 550px;
+    }
+    section .container button {
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: 0;
+        background-color: yellow;
+        box-shadow: 2px 0 2px 0 white;
+    }
+</style>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo">
+        <div class="link">
+        <a href="#index.html">Home</a>
+        <a href="Flag.html">Flag</a>
+        <a href="support.html">support</a>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+           <div>
+             <h1>Harry potter</h1>
+             <h1>Return to hogwarts</h1>
+             <button onclick="move()">Let's Start</button>
+           </div>
+        </div>
+        <img src="img/harry-potter.png" alt="harry-potter">
+    </section>
+    <script>
+        function move() {
+       window.location = "flags.html";
+        }
+    </script>
+</body>
+</html>
